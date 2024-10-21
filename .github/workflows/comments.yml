@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
       - name: MDRCNY-Create Pull Request for Another Repository
-        uses: MDRCNY/MDRCNY-Actions-CPR@latest
+        uses: MDRCNY/MDRCNY-Actions-CPR@v1.0.1
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
