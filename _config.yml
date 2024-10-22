@@ -78,7 +78,7 @@ baseurl: ""
 repository: akhyarrh/akhyarrh.github.io
 
 # Staticman url
-staticman_url: 'https://legendary-macaron-3a5244.netlify.app/.netlify/functions/staticman'
+staticman_url: 'https://staticman-akhyarrh.netlify.app/.netlify/functions/staticman'
 
 # WTF IS THIS THING
 # used by <html lang>
@@ -133,6 +133,9 @@ exclude:
   - node_modules
   - vendor
   - staticman.yml
+  - package.json
+  - package-lock.json
+  - jampack.config.js
 
 sass:
   style: expanded
@@ -175,6 +178,8 @@ markdown: CommonMark
 commonmark:
   options: ['SMART','FOOTNOTES','UNSAFE']
   extensions: ['table', 'strikethrough', 'autolink']
+  render:
+    header_ids: true  # Enable auto-IDs for headings
 
 jekyll-mentions: "https://twitter.com"
 
