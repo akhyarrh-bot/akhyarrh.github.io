@@ -15,7 +15,7 @@ jobs:
       - name: MDRCNY-Create Pull Request for Another Repository
         uses: MDRCNY/MDRCNY-Actions-CPR@v1.0.1
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         with:
           source_folder: '_data/comments'
           destination_repo: 'akhyarrh/akhyarrh.github.io'
